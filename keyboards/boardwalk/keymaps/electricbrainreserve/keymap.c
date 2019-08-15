@@ -65,16 +65,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
  * │ Null │ Null │ Ld H+│ Ld H-│ Ld V+│ Ld V-│      │ Null │ Null │ Prev │ Vol- │ Vol+ │ Next │ Null │
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
- * │	    │Ld Tog│ Ld M+│ Ld M-│ Null │     Null    │     Null    │ Prev │ Vol- │ Vol+ │ Next │      │
+ * │      │Ld Tog│ Ld M+│ Ld M-│ Null │     Null    │     Null    │ Prev │ Vol- │ Vol+ │ Next │      │
  * └──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘
  */
 
 [_FUNC] = LAYOUT_ortho_hhkb(
-		KC_NO, KC_F1,   KC_F2,   KC_F3,    KC_F4,   KC_F5,   KC_F11,  KC_F12, KC_F6, KC_F7,   KC_F8,   KC_F9,   KC_F10, KC_NO,
-		KC_NO, KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,
-		KC_NO, KC_NO,   RGB_SAI, RGB_SAD,  RGB_SPI, RGB_SPD, KC_TRNS,   KC_NO,  KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,
-		KC_NO, KC_NO,   RGB_HUI, RGB_HUD,  RGB_VAI, RGB_VAD, KC_TRNS, KC_NO,  KC_NO, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT, KC_NO,
-			     RGB_TOG, RGB_MOD, RGB_RMOD, KC_NO,   	  KC_NO,   		       KC_NO, 	 KC_NO, 	KC_PGDN, KC_PGUP, KC_NO),
+		_______, KC_F1,   KC_F2,   KC_F3,    KC_F4,   KC_F5,   KC_F11,  KC_F12, KC_F6, KC_F7,   KC_F8,   KC_F9,   KC_F10, _______,
+		_______, _______,   _______,   _______,    _______,   _______,   _______,   _______,  _______, _______,   _______,   _______,   _______,  _______,
+		_______, _______,   RGB_SAI, RGB_SAD,  RGB_SPI, RGB_SPD, _______,   _______,  _______, _______,   _______,   _______,   _______,  _______,
+		_______, _______,   RGB_HUI, RGB_HUD,  RGB_VAI, RGB_VAD, _______, _______,  _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT, _______,
+			     RGB_TOG, RGB_MOD, RGB_RMOD, _______,   	  _______,   		       _______, 	 _______, 	KC_PGDN, KC_PGUP, _______),
 
 /* 2
  * ┌──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┐
@@ -86,14 +86,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
  * │ Null │ Null │ Null │ Null │ Null │ Null │      │ Null │ Null │ Null │ Null │ Null │ Null │ Null │
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
- * │      │ Null │ Null │ Null │ Null │	   Null     │	   Null     │	Null │ Null │ Null │ Null │      │
+ * │      │ Null │ Null │ Null │ Null │	   Null     │	  Null    │	Null │ Null │ Null │ Null │      │
  * └──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘
  */
 
 [_RESET] = LAYOUT_ortho_hhkb(
-		RESET, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-			     KC_NO, KC_NO, KC_NO, KC_NO,     KC_NO, 		     KC_NO, 	 KC_NO, KC_NO, KC_NO, KC_NO)
+		RESET, _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______, _______, _______,
+		_______, _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______, _______, _______,
+		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+			     _______, _______, _______, _______,     _______, 		     _______, 	 _______, _______, _______, _______)
 };
