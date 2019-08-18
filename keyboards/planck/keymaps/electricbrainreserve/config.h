@@ -1,5 +1,5 @@
 #pragma once
-
+#include "ws2812.h"
 #ifdef AUDIO_ENABLE
     #define STARTUP_SONG SONG(PLANCK_SOUND)
     // #define STARTUP_SONG SONG(NO_SOUND)
@@ -39,3 +39,4 @@
 
 #define TAPPING_TERM 175
 #define TAPPING_TOGGLE 2
+#define WS2812_LED_N 9
